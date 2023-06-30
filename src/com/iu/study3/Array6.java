@@ -24,9 +24,10 @@ public class Array6 {
 		
 		for(int i=0;i<ars.length;i++) {
 			for(int j=0;j<ars[i].length;j++) {
-				System.out.println(ars[i][j]);
+				System.out.println(ars[i][j]);i
 			}
 		}
+		int a=0;
 		
 		
 		
