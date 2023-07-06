@@ -4,6 +4,24 @@ import java.util.Scanner;
 
 public class StudentService {
 	
+	public Student findByNum(Student [] students) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("찾을려는 학생의 번호를 입력하세요");
+		int num = sc.nextInt();
+		
+		Student student=null;
+		
+		for(int i=0;i<students.length;i++) {
+			if(num==students[i].num) {
+				student = students[i];
+				break;
+			}
+		}
+		
+		return student;
+		
+	}
+	
 	public Student makeStudentOne() {
 		Scanner sc = new Scanner(System.in);
 		
