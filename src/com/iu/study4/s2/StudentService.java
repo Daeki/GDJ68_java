@@ -12,7 +12,7 @@ public class StudentService {
 		Student student=null;
 		
 		for(int i=0;i<students.length;i++) {
-			if(num==students[i].num) {
+			if(num==students[i].getNum()) {
 				student = students[i];
 				break;
 			}
@@ -27,17 +27,17 @@ public class StudentService {
 		
 		Student student = new Student();
 		System.out.println("이름을 입력");
-		student.name=sc.next();
+		student.setName(sc.next());
 		System.out.println("번호를 입력");
-		student.num=sc.nextInt();
+		student.setNum(sc.nextInt());
 		System.out.println("국어를 입력");
-		student.kor=sc.nextInt();
+		student.setKor(sc.nextInt());
 		System.out.println("영어를 입력");
-		student.eng=sc.nextInt();
+		student.setEng(sc.nextInt());
 		System.out.println("수학을 입력");
-		student.math=sc.nextInt();
-		student.total=student.kor+student.eng+student.math;
-		student.avg=student.total/3.0;
+		student.setMath(sc.nextInt());
+		student.cal();
+		
 		
 		return student;
 		//학생 1명 만들어서 이름, 번호, 국어, 영어, 수학
@@ -64,17 +64,18 @@ public class StudentService {
 		for(int i=0;i<count;i++) {
 			Student student = new Student();
 			System.out.println("이름을 입력");
-			student.name=sc.next();
+			student.setName(sc.next());
 			System.out.println("번호를 입력");
-			student.num=sc.nextInt();
+			student.setNum(sc.nextInt());
 			System.out.println("국어를 입력");
-			student.kor=sc.nextInt();
+			student.setKor(sc.nextInt());
 			System.out.println("영어를 입력");
-			student.eng=sc.nextInt();
+			student.setEng(sc.nextInt());
 			System.out.println("수학을 입력");
-			student.math=sc.nextInt();
-			student.total=student.kor+student.eng+student.math;
-			student.avg=student.total/3.0;
+			student.setMath(sc.nextInt());
+//			student.total=student.kor+student.eng+student.math;
+//			student.avg=student.total/3.0;
+			student.cal();
 			students[i]=student;
 		}
 		

@@ -30,7 +30,7 @@ public class StudentController {
 				//1. findBynum
 				Student student = studentService.findByNum(students);
 				//2. viewOne
-				studentView.viewOne(student);
+				studentView.view(student);
 				
 			}else {
 				System.out.println("종료 합니다");
