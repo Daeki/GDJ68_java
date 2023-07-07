@@ -1,5 +1,5 @@
 package com.iu.study5.s1;
 
-public class AirPlane {
+public class AirPlane implements Flyable{
 
 }
