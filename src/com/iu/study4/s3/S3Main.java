@@ -45,6 +45,8 @@ public class S3Main {
 		//---------------------------
 		Phone phone = new Phone();
 		phone.info();
+		Car car = new Car();
+		
 
 	}
 

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import com.iu.study4.s2.Student;
 import com.iu.study4.s3.Car;
+import com.iu.study4.s5.StaticTest;
 
 public class S4Main {
 
@@ -19,6 +20,7 @@ public class S4Main {
 		
 		
 		String name="";  
+		StaticTest.staticMethod();
 		
 
 	}
